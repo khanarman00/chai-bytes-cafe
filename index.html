@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai & Bytes Cafe</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        html {
+            
+            scroll-behavior: smooth; 
+        }
+    </style>
+
+</head>
+<body>
+        
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="home">
+        <div>
+            <h2> Welcome to Chai & Bytes Café</h2>
+            <p>Welcome to the perfect blend of cozy vibes, fresh brews, and tasty bites.<br>
+               Come, relax, and make every sip memorable!</p>
+        </div>
+    </section>
+
+
+    <section id="menu">
+        <h2 id="khan">Order list</h2>
+        <p style="font-size: 30px;">Select your favorite items from our categories</p>
+
+        <details>
+            <summary>Coffee</summary>
+            <ul>
+                <li><label><input type="checkbox" name="menu" value="Espresso – ₹100">Espresso – ₹100</label></li>
+                <li><label><input type="checkbox" name="menu" value="Cappuccino – ₹120">Cappuccino – ₹120</label></li>
+                <li><label><input type="checkbox" name="menu" value="Cold Coffee – ₹150">Cold Coffee – ₹150</label></li>
+            </ul>
+        </details>  
+        
+        
+        <details>
+            <summary>Tea</summary>
+            <ul>
+                <li><label><input type="checkbox" name="menu" value="Masala Chai – ₹60">Masala Chai – ₹60</label></li>
+                <li><label><input type="checkbox" name="menu" value="Green Tea – ₹70">Green Tea – ₹70</label></li>
+                <li><label><input type="checkbox" name="menu" value="Lemon Tea – ₹80">Lemon Tea – ₹80</label></li>
+             </ul>
+        </details>
+
+
+         <details>
+            <summary>Snacks</summary>
+            <ul>
+                <li><label><input type="checkbox" name="menu" value="Veg Sandwich – ₹90">Veg Sandwich – ₹90</label></li>
+                <li><label><input type="checkbox" name="menu" value="Cheese Sandwich – ₹110">Cheese Sandwich – ₹110</label></li>
+                <li><label><input type="checkbox" name="menu" value="Garlic Bread – ₹100">Garlic Bread – ₹100</label></li>
+
+            </ul>
+        </details>
+
+
+        <details>
+            <summary>Desserts</summary>
+            <ul>
+                <li><label><input type="checkbox" name="menu" value="Chocolate Brownie – ₹80">Chocolate Brownie – ₹80</label></li>
+                <li><label><input type="checkbox" name="menu" value="Red Velvet Cake Slice – ₹120">Red Velvet Cake Slice – ₹120</label></li>
+                <li><label><input type="checkbox" name="menu" value="Muffin – ₹70">Muffin – ₹70</label></li>
+
+            </ul>
+        </details>
+
+
+        <details>
+            <summary>Meals & Sides</summary>
+            <ul>
+                <li><label><input type="checkbox" name="menu" value="Pasta (White / Red Sauce) – ₹180">Pasta (White / Red Sauce) – ₹180</label></li>
+                <li><label><input type="checkbox" name="menu" value="Maggi (Masala / Cheese) – ₹90 / ₹110">Maggi (Masala / Cheese) – ₹90 / ₹110</label></li>
+                <li><label><input type="checkbox" name="menu" value="Wraps (Paneer / Chicken) – ₹150 / ₹180">Wraps (Paneer / Chicken) – ₹150 / ₹180</label></li>
+                <li><label><input type="checkbox" name="menu" value="Pizza Slice – ₹120">Pizza Slice – ₹120</label></li>
+                <li><label><input type="checkbox" name="menu" value="Momos (Veg / Chicken) – ₹100 / ₹130">Momos (Veg / Chicken) – ₹100 / ₹130</label></li>
+
+
+            </ul>
+        </details>
+    </section>
+
+    <section id="product">
+        <h2 id="khan">Product</h2>
+        <table>
+            <tr>
+                <th>Coffee Bean Products</th>
+                <th>Tea Products</th>
+            </tr>
+            <tr>
+                <td>Whole Beans</td>
+                <td>Green Tea</td>
+            </tr>
+            <tr>
+                <td>Ground Coffee</td>
+                <td>Black Tea</td>
+           </tr>
+           <tr>
+                <td>Instant Coffee</td>
+                <td>White Tea</td>
+            </tr>
+            <tr>
+                <td>Coffee Pods / Capsules</td>
+                <td>Oolong Tea</td>
+            </tr>
+            
+        </table>
+   </section>
+
+
+   <section id="photos">
+    <h2 id="khan">Photos</h2>
+    <img src="pic 1.jpg" width="300" height="300">
+    <img src="pic2.jfif" width="300" height="300">
+    <img src="pic 3.webp" width="300" height="300">
+    <img src="pic 4.jpeg" width="300" height="300">
+
+   </section>
+ 
+
+  <section id="contact">
+  <h2 id="khan">Contact Us</h2>
+  <div class="contact-form">
+    <p><strong>📍 Address:</strong> Chai & Bytes Café</p>
+    <p><strong>📞 Phone:</strong> +91 9569513684</p>
+    <p><strong>✉️ Email:</strong> arman5075khan@gmail.com</p>
+  </div>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <input class="submit-btn" type="submit" placeholder="SUBMIT">
+  </form>
+</section>
+
+</body>
+</html>

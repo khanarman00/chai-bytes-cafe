@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+    color: #333;
+    line-height: 1.6;
+    background:#f4ebe1;
+}
+
+/* Header */
+header {
+    background: #6f4e37; 
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;  
+}
+
+#home{
+        height: 600px;
+          width: 100%;   
+   /* display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    background: url('bg-image.jpg') center/cover no-repeat; 
+    color: white;
+    padding: 20px;*/
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Golden yellow */
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Section styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Home section */
+#home {
+    background: url('bg-image.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    /* border-radius: 15px; */
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.3);
+}
+
+#home h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+#home p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Menu Section */
+#menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f4ebe1;
+    scroll-margin-top: 80px;
+}
+
+#menu h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 1px;
+}
+
+#menu p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+details summary {
+    cursor: pointer;
+    background: #6f4e37;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 200px;
+    margin: auto;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+details summary:hover {
+    background: #8b5e3c;
+}
+
+details ul {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+details ul li {
+    background: #f4e1d2;
+    margin: 8px auto;
+    padding: 12px 15px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.2s;
+}
+
+details ul li:hover {
+    transform: scale(1.05);
+    background: #f2d3b0;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#product {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f4ebe1;
+    scroll-margin-top: 80px;
+}
+
+#product table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#product th, #product td {
+    border: 5px solid rgb(94, 17, 17);
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(229, 189, 189);
+}
+
+#product h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 70px;
+    margin-top: 150px;
+}
+
+#photos {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f4ebe1;
+    margin-top: 100px;
+    scroll-margin-top: 80px;
+}
+
+#photos h2 {
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 3px 0;
+}
+
+#khan {
+    background-color: #6f4e37;
+}
+
+section img {
+    margin-top: 110px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    margin: auto; 
+} 
+
+.contact-form input,
+.contact-form textarea{
+  margin: 10px 0;          
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+textarea{
+    resize: none;
+}
+input, textarea{
+    outline: none;
+}
+ 
+.submit-btn{
+    background-color: #e3252b;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+
+ } 
+        
+.submit-btn:hover{
+     background:#670202;
+ } 
+
+ div{
+    padding-bottom:40px ;
+    padding-top:  50px;
+ }
+ #contact h2{
+    color: white;
+    
+ }
