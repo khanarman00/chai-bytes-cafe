@@ -1,248 +1,134 @@
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 
-body {
-    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
-    color: #333;
-    line-height: 1.6;
-    background:#f4ebe1;
+
+body{
+    background-color:#081b29 ;
+    color: #ededed;
 }
 
-/* Header */
-header {
-    background: #6f4e37; 
-    padding: 15px 40px;
-    position: sticky;
-    top: 0;  
-}
-
-#home{
-        height: 600px;
-          width: 100%;   
-   /* display: flex;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-    background: url('bg-image.jpg') center/cover no-repeat; 
-    color: white;
-    padding: 20px;*/
-
-}
-
-nav ul {
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100 ;
 }
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
+.logo{
+    font-size: 25px;
+    color: #ededed;
     text-decoration: none;
-    color: #fff;
+    font-weight: 600;
+}
+
+
+.navbar a {
     font-size: 18px;
+    color:#ededed ;
+    text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s, border-bottom 0.3s;
-    padding-bottom: 5px;
+    margin-left: 35px;
 }
 
-nav ul li a:hover {
-    color: #ffd700; /* Golden yellow */
-    border-bottom: 2px solid #ffd700;
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
 }
 
-/* Section styling */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* Home section */
-#home {
-    background: url('bg-image.jpg') center/cover no-repeat;
-    color: white;
-    padding: 100px 20px;
-    /* border-radius: 15px; */
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.3);
-}
-
-#home h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
-
-#home p {
-    font-size: 20px;
-    max-width: 600px;
-    margin: auto;
-}
-
-/* Menu Section */
-#menu {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #f4ebe1;
-    scroll-margin-top: 80px;
-}
-
-#menu h2 {
-    font-size: 32px;
-    color: white;
-    margin-bottom: 50px;
-    margin-top: 1px;
-}
-
-#menu p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-details summary {
-    cursor: pointer;
-    background: #6f4e37;
-    color: white;
-    padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    width: 200px;
-    margin: auto;
-    transition: 0.3s;
-    margin-top: 10px;
-}
-
-details summary:hover {
-    background: #8b5e3c;
-}
-
-details ul {
-    margin-top: 15px;
-    list-style: none;
-    padding: 0;
-}
-
-details ul li {
-    background: #f4e1d2;
-    margin: 8px auto;
-    padding: 12px 15px;
-    border-radius: 8px;
-    width: 250px;
-    transition: transform 0.2s;
-}
-
-details ul li:hover {
-    transform: scale(1.05);
-    background: #f2d3b0;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-#product {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #f4ebe1;
-    scroll-margin-top: 80px;
-}
-
-#product table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 60%;
-}
-
-#product th, #product td {
-    border: 5px solid rgb(94, 17, 17);
-    padding: 12px 20px;
-    text-align: center;
-    font-size: 18px;
-}
-
-tr:nth-child(even) {
-    background-color: rgb(229, 189, 189);
-}
-
-#product h2 {
-    font-size: 32px;
-    color: white;
-    margin-bottom: 70px;
-    margin-top: 150px;
-}
-
-#photos {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #f4ebe1;
-    margin-top: 100px;
-    scroll-margin-top: 80px;
-}
-
-#photos h2 {
-    font-size: 32px;
-    color: white;
-    margin: 0;
-    text-align: center;
-    padding: 3px 0;
-}
-
-#khan {
-    background-color: #6f4e37;
-}
-
-section img {
-    margin-top: 110px;
-}
-
-form{
+.home{
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    width:400px;
-    margin: auto; 
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size:56px ;
+    font-weight: 700;
+    line-height: 1.2
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size:19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
 } 
 
-.contact-form input,
-.contact-form textarea{
-  margin: 10px 0;          
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.btn-box a:hover{
+    color: #00abf0;
 }
-textarea{
-    resize: none;
-}
-input, textarea{
-    outline: none;
-}
- 
-.submit-btn{
-    background-color: #e3252b;
-    cursor: pointer;
-    transition: all 0.3s;
-    color: white;
 
- } 
-        
-.submit-btn:hover{
-     background:#670202;
- } 
 
- div{
-    padding-bottom:40px ;
-    padding-top:  50px;
- }
- #contact h2{
-    color: white;
-    
- }
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color:#081b29 ;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#081b29;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.btn-box a:hover::before{
+     width: 100%;
+}
